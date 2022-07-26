@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="1" errors="0" time="13.406">
+  <testsuite name="undefined" errors="0" failures="0" skipped="2" timestamp="2022-07-24T15:28:11" time="8.503" tests="2">
+    <testcase classname=" Test the database connection with server up" name=" Test the database connection with server up" time="0">
+      <skipped/>
+    </testcase>
+    <testcase classname=" Test the database connection with server down" name=" Test the database connection with server down" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2022-07-24T15:28:11" time="11.926" tests="1">
+    <testcase classname=" These data should be written in the database" name=" These data should be written in the database" time="0.001">
+      <failure>Error: Hooks cannot be defined inside tests. Hook of type &quot;beforeAll&quot; is nested within &quot;These data should be written in the database&quot;.
+    at eventHandler (D:\Documents\webapp\node_modules\jest-circus\build\eventHandler.js:106:11)
+    at dispatchSync (D:\Documents\webapp\node_modules\jest-circus\build\state.js:86:5)
+    at _addHook (D:\Documents\webapp\node_modules\jest-circus\build\index.js:135:27)
+    at beforeAll (D:\Documents\webapp\node_modules\jest-circus\build\index.js:150:3)
+    at Object.&lt;anonymous&gt; (D:\Documents\webapp\pages\api\message.test.ts:8:3)
+    at Promise.then.completed (D:\Documents\webapp\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\Documents\webapp\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (D:\Documents\webapp\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+      <failure>Error: Tests cannot be nested. Test &quot;should insert a message to the database&quot; cannot run because it is nested within &quot;These data should be written in the database&quot;.
+    at eventHandler (D:\Documents\webapp\node_modules\jest-circus\build\eventHandler.js:146:11)
+    at dispatchSync (D:\Documents\webapp\node_modules\jest-circus\build\state.js:86:5)
+    at _addTest (D:\Documents\webapp\node_modules\jest-circus\build\index.js:226:36)
+    at test (D:\Documents\webapp\node_modules\jest-circus\build\index.js:165:5)
+    at Object.&lt;anonymous&gt; (D:\Documents\webapp\pages\api\message.test.ts:13:3)
+    at Promise.then.completed (D:\Documents\webapp\node_modules\jest-circus\build\utils.js:333:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (D:\Documents\webapp\node_modules\jest-circus\build\utils.js:259:10)
+    at _callCircusTest (D:\Documents\webapp\node_modules\jest-circus\build\run.js:277:40)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
